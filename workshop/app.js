@@ -1,10 +1,10 @@
-// AI Workflow Discovery — YCP Consulting workshop tool.
+// AI Workflow Discovery — ETD workshop tool.
 // Bring-your-own-Claude: no API key, no backend. Each step shows a ready-made
 // prompt to copy into the participant's own Claude.ai conversation; they paste
 // the result back in, and the tool parses/renders it. Bilingual (NO/EN).
 
 const PHASES = ["context", "workflow", "opportunities", "prioritize", "deepdive", "solutions", "pilot", "brief"];
-const STORAGE_KEY = "ycpWorkshopState";
+const STORAGE_KEY = "etdWorkshopState";
 
 function defaultState() {
   return {
@@ -820,7 +820,7 @@ function renderBrief(ws) {
     const blob = new Blob([state.briefText], { type: "text/markdown" });
     const a = document.createElement("a");
     a.href = URL.createObjectURL(blob);
-    a.download = `pilot-brief-${(state.context.company || "ycp").toLowerCase().replace(/\s+/g, "-")}.md`;
+    a.download = `pilot-brief-${(state.context.company || "etd").toLowerCase().replace(/\s+/g, "-")}.md`;
     a.click();
   });
   document.getElementById("pdf-brief").addEventListener("click", () => {
@@ -838,9 +838,9 @@ function renderBrief(ws) {
           <p>${t("ctaInternalBody")} <a href="${state.lang === "en" ? "../ai-tips-for-engineers/" : "../ai-tips-for-ingeniorer/"}" target="_blank" rel="noopener">${t("ctaInternalLink")}</a></p>
         </div>
         <div class="cta-option highlight">
-          <h4>${t("ctaYcpTitle")}</h4>
-          <p>${t("ctaYcpBody")}</p>
-          <a href="mailto:kontakt@ycpconsulting.no" class="btn-primary" style="text-decoration:none;">${t("ctaYcpBtn")}</a>
+          <h4>${t("ctaEtdTitle")}</h4>
+          <p>${t("ctaEtdBody")}</p>
+          <a href="../kontakt/" class="btn-primary" style="text-decoration:none;">${t("ctaEtdBtn")}</a>
         </div>
       </div>
     </div>
@@ -935,8 +935,8 @@ const T = {
     ctaHeading: "Dere har identifisert en mulighet. Nå må dere teste om den faktisk fungerer.",
     ctaInternalTitle: "Explore internally", ctaInternalBody: "Ta med pilotbrief-en og diskuter den internt. Se også",
     ctaInternalLink: "AI-verktøykassen for ingeniører",
-    ctaYcpTitle: "Build a pilot with YCP", ctaYcpBody: "Vi hjelper dere å gjøre det valgte use-caset om til en fungerende prototype.",
-    ctaYcpBtn: "DISCUSS THE PILOT →",
+    ctaEtdTitle: "Bygg en pilot med ETD", ctaEtdBody: "Vi hjelper dere å gjøre det valgte use-caset om til en fungerende prototype.",
+    ctaEtdBtn: "DISKUTER PILOTEN →",
   },
   en: {
     phase_context: "Context", phase_workflow: "Workflow", phase_opportunities: "Opportunities",
@@ -998,8 +998,8 @@ const T = {
     ctaHeading: "You've identified an opportunity. Now let's test whether it actually works.",
     ctaInternalTitle: "Explore internally", ctaInternalBody: "Take the pilot brief with you and discuss it internally. See also",
     ctaInternalLink: "the AI toolkit for engineers",
-    ctaYcpTitle: "Build a pilot with YCP", ctaYcpBody: "We'll help you turn the selected use case into a working prototype.",
-    ctaYcpBtn: "DISCUSS THE PILOT →",
+    ctaEtdTitle: "Build a pilot with ETD", ctaEtdBody: "We'll help you turn the selected use case into a working prototype.",
+    ctaEtdBtn: "DISCUSS THE PILOT →",
   },
 };
 

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://adriandie.github.io/ycp-consulting/sitemap.xml
+Sitemap: https://etdconsulting.no/sitemap.xml

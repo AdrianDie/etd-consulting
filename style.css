@@ -658,3 +658,24 @@ footer.site-footer {
   .content-grid { grid-template-columns: 1fr; }
   .sidebar-nav { position: static; display: none; }
 }
+
+/* ---------- Kontaktskjema ---------- */
+.contact-wrap { max-width: 640px; margin: 0 auto; }
+.contact-form { display: flex; flex-direction: column; gap: 20px; }
+.contact-form .field { display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 500; color: var(--black); }
+.contact-form .field em { color: var(--indigo); font-style: normal; }
+.contact-form input, .contact-form select, .contact-form textarea {
+  font: inherit; font-weight: 300; font-size: 16px; color: var(--ink);
+  border: 1px solid var(--line); border-radius: 0; padding: 12px 14px; background: #fff; width: 100%;
+}
+.contact-form textarea { min-height: 140px; resize: vertical; }
+.contact-form input:focus, .contact-form select:focus, .contact-form textarea:focus { outline: 2px solid var(--indigo); outline-offset: 0; border-color: var(--indigo); }
+.contact-form button {
+  align-self: flex-start; font: inherit; font-weight: 500; font-size: 15px; cursor: pointer;
+  background: var(--navy); color: #fff; border: 0; border-radius: 0; padding: 12px 28px;
+}
+.contact-form button:disabled { opacity: 0.6; cursor: default; }
+.contact-form .form-note { font-size: 13px; color: #666; margin: 0; }
+.contact-form .hp { position: absolute; left: -9999px; }
+.form-result { display: none; padding: 32px; border: 1px solid var(--line); }
+.form-result h3 { font-size: 26px; margin-bottom: 10px; }
