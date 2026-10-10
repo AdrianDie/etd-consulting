@@ -681,10 +681,9 @@ footer.site-footer {
 .form-result h3 { font-size: 26px; margin-bottom: 10px; }
 
 /* ---------- Forside (workshop-landing) ---------- */
-.home .btn-cta { color: var(--black) !important; }
-.home nav.main-nav .btn-cta::after { display: none; }
-.home nav.main-nav a.btn-cta { padding: 10px 20px; }
-.home nav.main-nav .btn-cta:hover { color: #fff !important; }
+nav.main-nav .btn-cta::after { display: none; }
+nav.main-nav a.btn-cta { padding: 10px 20px; }
+nav.main-nav .btn-cta:hover { color: #fff !important; }
 
 .home-hero {
   background: var(--navy);
@@ -879,7 +878,7 @@ footer.site-footer {
   .home-hero-media { min-height: 200px; order: 2; }
   .split { grid-template-columns: 1fr; gap: 40px; }
   .catch { grid-template-columns: 1fr; gap: 16px; padding: 28px 24px; }
-  .home .btn-cta { margin-top: 12px; }
+  nav.main-nav .btn-cta { margin-top: 12px; }
 }
 @media (max-width: 600px) {
   .home section.block { padding: 64px 20px; }
@@ -1015,8 +1014,22 @@ footer.site-footer {
 .media-grid .tile::before {
   background: linear-gradient(180deg, rgba(5,28,44,0.6) 0%, rgba(5,28,44,0.1) 28%, rgba(5,28,44,0.35) 55%, rgba(5,28,44,0.92) 100%);
 }
-@media (max-width: 600px) { .home footer.site-footer { padding-left: 20px; padding-right: 20px; } }
+@media (max-width: 600px) { footer.site-footer { padding-left: 20px; padding-right: 20px; } }
 .media-grid .tile .kicker { color: #fff; }
 .media-grid .tile::before {
   background: linear-gradient(180deg, rgba(5,28,44,0.7) 0%, rgba(5,28,44,0.15) 26%, rgba(5,28,44,0.35) 52%, rgba(5,28,44,0.92) 100%);
+}
+
+/* Felles innholdsbredde: juster alle seksjoner til header (1112px innhold) */
+section.block, .page-hero { padding-left: max(24px, calc((100% - 1112px) / 2)); padding-right: max(24px, calc((100% - 1112px) / 2)); }
+.cta-band { padding-left: 24px; padding-right: 24px; }
+.cta-band-inner { max-width: 1112px; }
+@media (max-width: 600px) {
+  section.block, .page-hero { padding-left: 20px; padding-right: 20px; }
+}
+@media (max-width: 600px) {
+  .page-hero { padding-top: 56px; padding-bottom: 48px; }
+  .page-hero h1 { font-size: 32px; line-height: 1.15; }
+  .page-hero p.lead { font-size: 17px; }
+  .header-inner { padding-left: 20px; padding-right: 20px; }
 }
