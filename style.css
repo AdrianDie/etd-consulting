@@ -1086,3 +1086,20 @@ section.block, .page-hero { padding-left: max(24px, calc((100% - 1112px) / 2)); 
   .footer-grid > div:first-child { grid-column: 1 / -1; }
 }
 @media (min-width: 861px) { .logo-img { height: 56px; } }
+
+/* Mer luft i artikler og guider */
+.prose p { margin: 0 0 22px; }
+.prose ul, .prose ol { margin: 0 0 32px; }
+.prose li { margin-bottom: 14px; }
+.prose h2, .article-prose h2 { margin: 72px 0 20px; }
+.prose h3 { margin: 40px 0 14px; }
+.prose > :first-child, .prose .toc + h2 { margin-top: 0; }
+.prose .toc { margin-bottom: 64px; }
+.prose .callout, .article-prose .callout { margin: 40px 0; }
+.prose .callout p, .prose .steps p, .prose .toc p { margin: 0; }
+.prose .callout p + p { margin-top: 12px; }
+.prose .code-block, .prose .steps, .prose .resource-table { margin-top: 32px; margin-bottom: 40px; }
+@media (max-width: 600px) {
+  .prose h2, .article-prose h2 { margin: 52px 0 16px; }
+  .prose .toc { margin-bottom: 48px; }
+}

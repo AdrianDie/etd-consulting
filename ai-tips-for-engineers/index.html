@@ -19,7 +19,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600&amp;family=Source+Serif+4:opsz,wght@8..60,300;8..60,400&amp;display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../style.css?v=8">
+<link rel="stylesheet" href="../style.css?v=9">
 <link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
 <link rel="icon" type="image/png" href="../images/favicon-32.png">
 <link rel="apple-touch-icon" href="../images/apple-touch-icon.png">
@@ -43,7 +43,7 @@
   <h1>AI toolkit for engineers: what you actually need to implement.</h1>
   <p class="lead">This isn't a list of AI prompts. It's the concrete tools, Skills and habits that make what you learned in the workshop actually stick — week after week, not just the day we were there.</p>
   <div class="resource-meta">
-    <span><strong>Reading time:</strong> ~15 min</span>
+    <span><strong>Reading time:</strong> ~18 min</span>
     <span><strong>Audience:</strong> engineers and technical teams</span>
     <span><strong>Prerequisite:</strong> access to Claude (the Skills feature)</span>
   </div>
@@ -58,6 +58,7 @@
       <a href="#claude-md">Get the AI to remember your company</a>
       <a href="#memory">Memory and context drift</a>
       <a href="#check-skill">Check a Skill before you trust it</a>
+      <a href="#connectors">Connect the AI to your systems</a>
       <a href="#20-tasks">20 tasks, 20 tools</a>
       <a href="#next-steps">Next steps</a>
     </nav>
@@ -165,7 +166,22 @@ When you get historical well data, always do this:
         <p><strong>1)</strong> You're wondering whether a skill you found is safe to use. <strong>2)</strong> You're considering building something yourself, but want to first know whether an established, vetted skill already does the job, so you don't reinvent the wheel.</p>
       </div>
 
-      <h2 id="20-tasks">5. 20 tasks, 20 tools</h2>
+      <h2 id="connectors">5. Connect the AI to the systems you already use</h2>
+      <p>So far we have talked about giving the AI good instructions. The next step is giving it access to the information. A <strong>connector</strong> links the AI tool directly to a system you already use, such as Jira, Confluence, SharePoint, Google Drive, GitHub or a database. Instead of copying and pasting, the AI can search, read and pull the information together itself when you ask.</p>
+      <p>Most connectors are built on <strong>MCP (Model Context Protocol)</strong>, an open standard Anthropic launched in 2024 that is now supported by most major AI tools. Claude has ready-made connectors for Atlassian (Jira and Confluence), Microsoft 365, Google Drive and GitHub, among others, and you can build your own for internal systems.</p>
+      <h3>What it makes possible</h3>
+      <ul>
+        <li><strong>Finding things in a large organisation.</strong> "Have we solved a similar problem before?" is hard to answer when the answer is spread across hundreds of Confluence pages and thousands of Jira issues. With a connector, the AI can search across them, read the relevant issues and give a summary with links to the sources.</li>
+        <li><strong>Analysing data.</strong> Give the AI access to a spreadsheet, an export from a business system or a database, and ask it to find trends, outliers or relationships. It can calculate, make charts and explain what it found. Ask it to show its calculations so you can check them.</li>
+        <li><strong>Making better decisions on a solution.</strong> Before you choose a technical solution, the AI can pull earlier decisions from Confluence, known problems from Jira and relevant requirements, and set the options against each other with pros, cons and risks. You still make the decision, but on a better basis.</li>
+        <li><strong>Keeping track of projects.</strong> "Which issues in this project have been stuck for more than two weeks, and why?" is something the AI can answer directly from Jira, instead of someone going through the board by hand.</li>
+      </ul>
+      <div class="callout warn">
+        <span class="callout-label">Before you connect anything</span>
+        <p>A connector uses the login of the person using it, so the AI only sees what that person already has access to. Still, start with read access rather than write access, and agree with IT which systems and which data can be connected. Always ask the AI to link to the sources it used, so you can check that the answer is right.</p>
+      </div>
+
+      <h2 id="20-tasks">6. 20 tasks, 20 tools</h2>
       <p>These are the most frequent tasks we see engineers and technical teams actually use AI for, with the tool or type of Skill we'd recommend for each. Some are official Anthropic skills, some are well-established community skills, some are tools you probably already have access to, and some you should build yourself in the workshop.</p>
 
       <table class="resource-table">
@@ -173,7 +189,7 @@ When you get historical well data, always do this:
           <tr><th>Task</th><th>Recommended tool</th><th>Type</th></tr>
         </thead>
         <tbody>
-          <tr><td>Finding information scattered across Confluence/Jira</td><td>Atlassian Rovo (built-in AI search)</td><td><span class="badge b-tool">Existing tool</span></td></tr>
+          <tr><td>Finding information scattered across Confluence/Jira</td><td>Atlassian connector in Claude (see section 5) or Atlassian Rovo</td><td><span class="badge b-tool">Existing tool</span></td></tr>
           <tr><td>Stress-testing a technical decision before you commit</td><td>"grill-me" skill (asks critical questions until you have a shared picture)</td><td><span class="badge b-community">Community, established</span></td></tr>
           <tr><td>Writing meeting notes from a transcript or bullet points</td><td>A custom skill with a fixed template per meeting type</td><td><span class="badge b-build">Build in the workshop</span></td></tr>
           <tr><td>Code review before merging</td><td>Built-in code-review skill</td><td><span class="badge b-official">Official</span></td></tr>

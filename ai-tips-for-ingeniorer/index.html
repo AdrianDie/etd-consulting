@@ -19,7 +19,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600&amp;family=Source+Serif+4:opsz,wght@8..60,300;8..60,400&amp;display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../style.css?v=8">
+<link rel="stylesheet" href="../style.css?v=9">
 <link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
 <link rel="icon" type="image/png" href="../images/favicon-32.png">
 <link rel="apple-touch-icon" href="../images/apple-touch-icon.png">
@@ -46,7 +46,7 @@
   <h1>AI-verktøykasse for ingeniører: det dere faktisk skal implementere.</h1>
   <p class="lead">Dette er ikke en liste med AI-prompts. Det er de konkrete verktøyene, Skillsene og vanene som gjør at det dere lærte i workshopen faktisk blir stående, uke etter uke, ikke bare den dagen vi var innom.</p>
   <div class="resource-meta">
-    <span><strong>Lesetid:</strong> ~15 min</span>
+    <span><strong>Lesetid:</strong> ~18 min</span>
     <span><strong>Målgruppe:</strong> ingeniører og tekniske team</span>
     <span><strong>Forutsetning:</strong> tilgang til Claude (Skills-funksjonen)</span>
   </div>
@@ -61,6 +61,7 @@
       <a href="#claude-md">Få AI-en til å huske bedriften</a>
       <a href="#minne">Minne og kontekst-drift</a>
       <a href="#sjekk-skill">Sjekk en Skill før dere stoler på den</a>
+      <a href="#connectors">Koble AI-en til systemene deres</a>
       <a href="#20-oppgaver">20 oppgaver, 20 verktøy</a>
       <a href="#neste-steg">Neste steg</a>
     </nav>
@@ -168,7 +169,22 @@ Når du får historiske brønndata, gjør alltid dette:
         <p><strong>1)</strong> Dere lurer på om en skill dere fant er trygg å bruke. <strong>2)</strong> Dere vurderer å bygge noe selv, men vil først vite om det finnes en etablert, gjennomgått skill som gjør jobben allerede, så dere slipper å finne opp hjulet på nytt.</p>
       </div>
 
-      <h2 id="20-oppgaver">5. 20 oppgaver, 20 verktøy</h2>
+      <h2 id="connectors">5. Koble AI-en til systemene dere allerede bruker</h2>
+      <p>Så langt har vi snakket om å gi AI-en gode instruksjoner. Neste steg er å gi den tilgang til informasjonen. En <strong>connector</strong> kobler AI-verktøyet direkte til et system dere allerede bruker, som Jira, Confluence, SharePoint, Google Drive, GitHub eller en database. I stedet for å kopiere og lime inn, kan AI-en selv søke, lese og sammenstille informasjonen når dere spør.</p>
+      <p>De fleste connectors bygger på <strong>MCP (Model Context Protocol)</strong>, en åpen standard Anthropic lanserte i 2024 og som nå støttes av de fleste store AI-verktøy. Claude har ferdige connectors for blant annet Atlassian (Jira og Confluence), Microsoft 365, Google Drive og GitHub, og dere kan lage egne for interne systemer.</p>
+      <h3>Hva det gjør mulig</h3>
+      <ul>
+        <li><strong>Finne ting i en stor organisasjon.</strong> «Har vi løst et lignende problem før?» er vanskelig å svare på når svaret ligger spredt i hundrevis av Confluence-sider og tusenvis av Jira-saker. Med en connector kan AI-en søke på tvers, lese de relevante sakene og gi et sammendrag med lenker til kildene.</li>
+        <li><strong>Analysere data.</strong> Gi AI-en tilgang til et regneark, en eksport fra et fagsystem eller en database, og be den finne trender, avvik eller sammenhenger. Den kan regne, lage grafer og forklare hva den fant. Be den vise beregningene, så kan dere kontrollere dem.</li>
+        <li><strong>Ta bedre beslutninger på en løsning.</strong> Før dere velger en teknisk løsning, kan AI-en hente tidligere beslutninger fra Confluence, kjente problemer fra Jira og relevante krav, og sette alternativene opp mot hverandre med fordeler, ulemper og risiko. Dere tar fortsatt beslutningen, men med et bedre grunnlag.</li>
+        <li><strong>Holde oversikt over prosjekter.</strong> «Hvilke saker i dette prosjektet har stått stille i over to uker, og hvorfor?» kan AI-en svare på direkte fra Jira, i stedet for at noen går gjennom tavla manuelt.</li>
+      </ul>
+      <div class="callout warn">
+        <span class="callout-label">Før dere kobler til</span>
+        <p>En connector bruker innloggingen til den som bruker den, så AI-en ser bare det personen allerede har tilgang til. Start likevel med lesetilgang, ikke skrivetilgang, og avklar med IT hvilke systemer og hvilke data som kan kobles til. Be alltid AI-en lenke til kildene den bruker, så dere kan sjekke at svaret stemmer.</p>
+      </div>
+
+      <h2 id="20-oppgaver">6. 20 oppgaver, 20 verktøy</h2>
       <p>Dette er de mest frekvente oppgavene vi ser at ingeniører og tekniske team faktisk bruker AI til, med det verktøyet eller den type Skill vi vil anbefale for hver av dem. Noen er offisielle Anthropic-skills, noen er godt etablerte community-skills, noen er verktøy dere sannsynligvis allerede har tilgang til, og noen bør dere bygge selv i workshopen.</p>
 
       <table class="resource-table">
@@ -176,7 +192,7 @@ Når du får historiske brønndata, gjør alltid dette:
           <tr><th>Oppgave</th><th>Anbefalt verktøy</th><th>Type</th></tr>
         </thead>
         <tbody>
-          <tr><td>Finne informasjon spredt i Confluence/Jira</td><td>Atlassian Rovo (innebygd AI-søk)</td><td><span class="badge b-tool">Eksisterende verktøy</span></td></tr>
+          <tr><td>Finne informasjon spredt i Confluence/Jira</td><td>Atlassian-connector i Claude (se punkt 5) eller Atlassian Rovo</td><td><span class="badge b-tool">Eksisterende verktøy</span></td></tr>
           <tr><td>Stressteste en teknisk beslutning før dere committer</td><td>«grill-me»-skill (spør kritisk til dere har et felles bilde)</td><td><span class="badge b-community">Community, etablert</span></td></tr>
           <tr><td>Skrive møtereferat fra transkripsjon eller stikkord</td><td>Egen skill med fast mal per møtetype</td><td><span class="badge b-build">Bygg i workshopen</span></td></tr>
           <tr><td>Kodegjennomgang før merge</td><td>Innebygd code-review-skill</td><td><span class="badge b-official">Offisiell</span></td></tr>
