@@ -1076,3 +1076,13 @@ section.block, .page-hero { padding-left: max(24px, calc((100% - 1112px) / 2)); 
 .article-prose .callout { margin: 36px 0; }
 @media (max-width: 600px) { .article-prose h2 { font-size: 24px; margin-top: 36px; } }
 @media (max-width: 600px) { .bento-hero .circle-btn { display: none; } }
+
+/* ---------- Ny logo (D1 + V3) ---------- */
+.logo-img { height: 50px; width: auto; }
+.footer-grid .logo-img { height: auto; width: min(250px, 100%); }
+.footer-grid .logo { display: block; margin-bottom: 16px; }
+@media (max-width: 600px) {
+  .logo-img { height: 42px; }
+  .footer-grid > div:first-child { grid-column: 1 / -1; }
+}
+@media (min-width: 861px) { .logo-img { height: 56px; } }
