@@ -1106,3 +1106,13 @@ section.block, .page-hero { padding-left: max(24px, calc((100% - 1112px) / 2)); 
 
 .navy-note { color: #d7dee6; max-width: 760px; margin: 48px 0 0; font-size: 16px; }
 .navy-note + .navy-links { margin-top: 20px; }
+
+/* Fagområder (tjenester) */
+.field-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 48px; margin-top: 56px; }
+.field { border-top: 1px solid var(--line); padding-top: 28px; }
+.field h3 { font-size: 22px; font-weight: 500; color: var(--black); margin: 0 0 12px; }
+.field p { color: var(--ink); margin: 0 0 20px; }
+.field ul { list-style: none; padding: 0; margin: 0; }
+.field li { padding: 10px 0; border-bottom: 1px solid var(--line); color: var(--black); font-size: 15px; }
+.field li a { color: var(--indigo); }
+@media (max-width: 900px) { .field-grid { grid-template-columns: 1fr; gap: 40px; } }
