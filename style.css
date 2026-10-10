@@ -1116,3 +1116,16 @@ section.block, .page-hero { padding-left: max(24px, calc((100% - 1112px) / 2)); 
 .field li { padding: 10px 0; border-bottom: 1px solid var(--line); color: var(--black); font-size: 15px; }
 .field li a { color: var(--indigo); }
 @media (max-width: 900px) { .field-grid { grid-template-columns: 1fr; gap: 40px; } }
+
+/* Om oss: mindre portrett + tillitsfakta */
+.founder { grid-template-columns: 230px minmax(0, 1fr); gap: 56px; }
+.founder-facts { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; margin: 32px 0 28px; padding: 24px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.founder-facts dt { font-size: 13px; color: #666; margin: 0 0 6px; }
+.founder-facts dd { margin: 0; color: var(--black); font-weight: 500; }
+.founder-facts dd a { color: var(--indigo); font-weight: 400; }
+.founder-cta { color: var(--black); }
+@media (max-width: 900px) {
+  .founder { grid-template-columns: 1fr; gap: 32px; }
+  .founder-img { max-width: 192px; }
+}
+@media (max-width: 600px) { .founder-facts { grid-template-columns: 1fr; gap: 16px; } }
