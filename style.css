@@ -1033,3 +1033,45 @@ section.block, .page-hero { padding-left: max(24px, calc((100% - 1112px) / 2)); 
   .page-hero p.lead { font-size: 17px; }
   .header-inner { padding-left: 20px; padding-right: 20px; }
 }
+
+/* ---------- Anmeldelser, portrett, priser ---------- */
+.review-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 2px; margin-top: 48px; background: var(--line); border: 1px solid var(--line); }
+.review { margin: 0; background: var(--canvas); padding: 28px 24px; display: flex; flex-direction: column; gap: 16px; }
+.review .stars { color: var(--indigo); letter-spacing: 2px; font-size: 15px; }
+.review blockquote { margin: 0; font-family: "Source Serif 4", Georgia, serif; font-weight: 300; font-size: 18px; line-height: 1.45; color: var(--black); flex: 1; }
+.review figcaption { font-size: 14px; }
+.review figcaption strong { display: block; font-weight: 500; color: var(--black); }
+.review figcaption span { color: #666; }
+.review-link { margin: 28px 0 0; }
+.about-portrait { width: 100%; max-width: 320px; height: auto; aspect-ratio: 1; object-fit: cover; margin-top: 40px; display: block; }
+
+.founder { display: grid; grid-template-columns: minmax(0, 4fr) minmax(0, 7fr); gap: 64px; align-items: start; }
+.founder-img { width: 100%; height: auto; aspect-ratio: 1; object-fit: cover; }
+.founder .statement { margin-bottom: 8px; }
+.founder-role { color: #666; margin: 0 0 24px; }
+.founder p { margin: 0 0 16px; }
+.founder-contact { display: flex; flex-wrap: wrap; gap: 8px 28px; margin-top: 24px !important; }
+
+.price-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 48px; margin-top: 48px; }
+.price { border-top: 2px solid var(--black); padding-top: 20px; }
+.price-label { font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: var(--indigo); margin: 0 0 12px; }
+.price-num { font-family: "Source Serif 4", Georgia, serif; font-weight: 300; font-size: 44px; line-height: 1.05; color: var(--black); margin: 0; }
+.price-unit { font-size: 14px; color: #666; margin: 6px 0 16px; }
+.price p:last-child { margin: 0; }
+.price-note { margin: 40px 0 0; font-size: 15px; color: #555; }
+
+@media (max-width: 1000px) { .review-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 860px) {
+  .founder { grid-template-columns: 1fr; gap: 32px; }
+  .founder-img { max-width: 320px; }
+  .price-grid { grid-template-columns: 1fr; gap: 36px; }
+}
+@media (max-width: 600px) {
+  .review-grid { grid-template-columns: 1fr; margin-top: 36px; }
+  .about-portrait { max-width: 240px; margin-top: 28px; }
+  .price-num { font-size: 38px; }
+}
+.article-prose h2 { margin: 44px 0 12px; font-size: 28px; }
+.article-prose > p:first-child { font-size: 18px; }
+.article-prose .callout { margin: 36px 0; }
+@media (max-width: 600px) { .article-prose h2 { font-size: 24px; margin-top: 36px; } }
