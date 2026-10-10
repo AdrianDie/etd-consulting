@@ -1075,3 +1075,4 @@ section.block, .page-hero { padding-left: max(24px, calc((100% - 1112px) / 2)); 
 .article-prose > p:first-child { font-size: 18px; }
 .article-prose .callout { margin: 36px 0; }
 @media (max-width: 600px) { .article-prose h2 { font-size: 24px; margin-top: 36px; } }
+@media (max-width: 600px) { .bento-hero .circle-btn { display: none; } }
