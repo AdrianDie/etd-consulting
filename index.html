@@ -3,26 +3,26 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ETD Stavanger | Engineering &amp; Technology Development</title>
-<meta name="description" content="ETD i Stavanger har to deler: ETD Consulting, IT-konsulentarbeid for norske bedrifter, og ETD Offshore, som bygges opp for material handling offshore.">
+<title>ETD Stavanger | AI, integrasjoner og nettsider for bedrifter</title>
+<meta name="description" content="ETD Consulting i Stavanger hjelper bedrifter med AI-løsninger, integrasjoner, interne verktøy og nettsider. Avgrensede prosjekter med tydelig pris, og en gratis AI-workshop for å komme i gang.">
 <link rel="canonical" href="https://etdconsulting.no/">
 <link rel="alternate" hreflang="nb" href="https://etdconsulting.no/">
 <link rel="alternate" hreflang="en" href="https://etdconsulting.no/en/">
 <link rel="alternate" hreflang="x-default" href="https://etdconsulting.no/">
 <meta property="og:type" content="website">
-<meta property="og:title" content="ETD Stavanger | Engineering &amp; Technology Development">
-<meta property="og:description" content="ETD i Stavanger har to deler: ETD Consulting, IT-konsulentarbeid for norske bedrifter, og ETD Offshore, som bygges opp for material handling offshore.">
+<meta property="og:title" content="ETD Stavanger | AI, integrasjoner og nettsider for bedrifter">
+<meta property="og:description" content="Avgrensede teknologiprosjekter for bedrifter i Stavanger-regionen, og en gratis AI-workshop for å komme i gang.">
 <meta property="og:url" content="https://etdconsulting.no/">
 <meta property="og:image" content="https://etdconsulting.no/images/hero.jpg">
 <meta property="og:locale" content="nb_NO">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="ETD Stavanger | Engineering &amp; Technology Development">
-<meta name="twitter:description" content="ETD i Stavanger har to deler: ETD Consulting, IT-konsulentarbeid for norske bedrifter, og ETD Offshore, som bygges opp for material handling offshore.">
+<meta name="twitter:title" content="ETD Stavanger | AI, integrasjoner og nettsider for bedrifter">
+<meta name="twitter:description" content="Avgrensede teknologiprosjekter for bedrifter i Stavanger-regionen, og en gratis AI-workshop for å komme i gang.">
 <meta name="twitter:image" content="https://etdconsulting.no/images/hero.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600&amp;family=Source+Serif+4:opsz,wght@8..60,300;8..60,400&amp;display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=4">
+<link rel="stylesheet" href="style.css?v=5">
 <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
 <link rel="icon" type="image/png" href="images/favicon-32.png">
 <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
@@ -32,8 +32,8 @@
   "name": "ETD",
   "alternateName": "Engineering & Technology Development",
   "url": "https://etdconsulting.no/",
-  "email": "kontakt@ycpconsulting.no",
-  "description": "ETD i Stavanger har to deler: ETD Consulting (IT-konsulentarbeid for norske bedrifter) og ETD Offshore (under oppbygging).",
+  "telephone": "+47 934 39 278",
+  "description": "ETD Consulting i Stavanger hjelper bedrifter med AI-løsninger, integrasjoner, interne verktøy og nettsider.",
   "areaServed": "Norge",
   "address": {
     "@type": "PostalAddress",
@@ -42,130 +42,192 @@
   }
 }</script>
 </head>
-<body>
+<body class="home">
 <header class="site-header">
   <div class="header-inner">
     <a href="./" class="logo"><img src="images/logo.svg" alt="ETD" class="logo-img"></a>
     <nav class="main-nav">
-      <a href="consulting/">ETD Consulting</a>
-<a href="offshore/">ETD Offshore</a>
-<a href="tjenester/">Tjenester</a>
-<a href="slik-vi-jobber/">Slik vi jobber</a>
-<a href="priser/">Priser</a>
-<a href="innsikt/">Innsikt</a>
-<a href="om-oss/">Om oss</a>
-<a href="en/" hreflang="en" lang="en">English</a>
+      <a href="#tjenester">Tjenester</a>
+      <a href="ai-workshop/">AI-workshop</a>
+      <a href="slik-vi-jobber/">Slik vi jobber</a>
+      <a href="innsikt/">Innsikt</a>
+      <a href="om-oss/">Om oss</a>
+      <a href="offshore/">Offshore</a>
+      <a href="en/" hreflang="en" lang="en">English</a>
+      <a href="kontakt/" class="btn-cta">Ta kontakt</a>
     </nav>
-    <button class="hamburger" aria-label="Meny"><span></span><span></span><span></span></button>
+    <button class="hamburger" aria-label="Meny" aria-expanded="false"><span></span><span></span><span></span></button>
   </div>
 </header>
 
-<section class="hero">
-  <div class="hero-inner">
+<!-- 1. Bento-hero -->
+<section class="bento-hero">
+  <div class="bento-inner">
     <div>
-      <h1>Engineering &amp; Technology Development, <span class="accent">fra Stavanger.</span></h1>
-      <p class="lead">ETD har to deler. ETD Consulting hjelper norske bedrifter med IT-arbeid. ETD Offshore bygges opp for material handling offshore.</p>
+      <p class="hero-kicker">ETD Consulting &middot; Stavanger</p>
+      <h1>Teknologi som løser konkrete problemer i bedriften deres.</h1>
+      <p class="lead">Vi hjelper bedrifter med AI-løsninger, integrasjoner, interne verktøy og nettsider. Avgrensede prosjekter, tydelig pris før vi starter, og en pris godt under et vanlig konsulenthus.</p>
     </div>
-    <a href="#velg" class="arrow-btn" aria-label="Velg del">&darr;</a>
+    <a href="#tjenester" class="circle-btn" aria-label="Se hva vi leverer">
+      <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path d="M12 4v16M5 13l7 7 7-7" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+    </a>
   </div>
 </section>
 
-<div class="tile-grid" id="velg">
-  <a href="consulting/" class="tile" style="min-height:420px;background-image:url('images/hero.jpg')">
-    <span class="kicker">Starter først</span>
-    <h3>ETD Consulting</h3>
-    <p style="position:relative; color:#d7dee6; font-size:16px; max-width:460px; margin:0 0 24px;">IT-relatert konsulentarbeid for norske bedrifter: integrasjoner, AI-løsninger, nettsider og samling av dokumentasjon på én plattform. Avgrensede leveranser til en pris godt under et vanlig konsulenthus.</p>
-    <span class="tile-btn">Les mer</span>
+<!-- 2. Utvalgt -->
+<div class="media-grid">
+  <a href="ai-tips-for-ingeniorer/" class="tile" style="background-image:url('images/article-1.jpg')">
+    <span class="kicker">Ressurs</span>
+    <h3>AI-verktøykasse for ingeniører: det dere faktisk skal implementere</h3>
+    <span class="tile-btn">Les ressursen</span>
   </a>
-  <a href="offshore/" class="tile" style="min-height:420px;">
-    <span class="kicker">Bygges opp</span>
-    <h3>ETD Offshore</h3>
-    <p style="position:relative; color:#d7dee6; font-size:16px; max-width:460px; margin:0 0 24px;">Material handling offshore for olje og gass og vindkraft. Området er under oppbygging, og vi tar gjerne en prat om konkrete behov.</p>
-    <span class="tile-btn">Les mer</span>
+  <a href="workshop/" class="tile" style="background-image:url('images/tile-omoss.jpg')">
+    <span class="kicker">Verktøy</span>
+    <h3>Fra «vi burde bruke AI» til en konkret pilot, steg for steg</h3>
+    <span class="tile-btn">Prøv verktøyet</span>
   </a>
-</div>
-
-<div class="tile-grid">
-  <a href="tjenester/" class="tile" style="background-image:url('images/hero.jpg')">
-    <span class="kicker">Tjeneste</span>
-    <h3>Teknologiprosjekter for bedrifter som vil vokse digitalt</h3>
-    <span class="tile-btn">Se tjenester</span>
-  </a>
-  <a href="slik-vi-jobber/" class="tile" style="background-image:url('images/tile-slikvijobber.jpg')">
+  <a href="slik-vi-jobber/" class="tile" style="background-image:url('images/tile-tjenester.jpg')">
     <span class="kicker">Modell</span>
-    <h3>Strengt opptak, fagansvarlig kvalitetssikring og faste leveranser</h3>
+    <h3>Faste leveranser, kvalitetssikring og pris avtalt på forhånd</h3>
     <span class="tile-btn">Slik vi jobber</span>
   </a>
-  <a href="bli-konsulent/" class="tile" style="background-image:url('images/tile-blikonsulent.jpg')">
-    <span class="kicker">Karriere</span>
-    <h3>Reell, betalt erfaring ved siden av studiene</h3>
-    <span class="tile-btn">Bli konsulent</span>
-  </a>
-  <a href="om-oss/" class="tile" style="background-image:url('images/tile-omoss.jpg')">
-    <span class="kicker">Om oss</span>
-    <h3>Et lite team med fokus på leveranser som holder</h3>
-    <span class="tile-btn">Om oss</span>
+  <a href="offshore/" class="tile" style="background-image:url('images/tile-blikonsulent.jpg')">
+    <span class="kicker">ETD Offshore</span>
+    <h3>Material handling for olje og gass og vindkraft, under oppbygging</h3>
+    <span class="tile-btn">Les mer</span>
   </a>
 </div>
 
-<section class="block navy">
-  <div class="two-col">
-    <div>
-      <p class="section-kicker">For bedrifter</p>
-      <h2 class="statement">Trenger dere en ny nettside, eller et internt verktøy som faktisk løser problemet?</h2>
-      <p style="margin-top:20px; color:#d7dee6; max-width:480px;">Vi bygger teknologiprosjekter for bedrifter &mdash; fra nettsider til skreddersydd programvare og integrasjoner &mdash; med samme prosess og oppfølging som et etablert konsulentselskap.</p>
-      <p style="margin-top:24px;"><a href="tjenester/" style="color:#fff; border-bottom:1px solid var(--cyan);">Se hva vi leverer &rarr;</a></p>
-    </div>
-    <div>
-      <p class="section-kicker">For studenter</p>
-      <h2 class="statement">Vil du bygge ekte prosjekter for ekte kunder, ved siden av studiene?</h2>
-      <p style="margin-top:20px; color:#d7dee6; max-width:480px;">ETD gir deg betalte oppdrag, en portefølje du faktisk kan vise frem, og fagansvarlige som følger deg tett gjennom hvert prosjekt.</p>
-      <p style="margin-top:24px;"><a href="bli-konsulent/" style="color:#fff; border-bottom:1px solid var(--cyan);">Søk om plass &rarr;</a></p>
+<!-- 3. Tjenester -->
+<section class="block" id="tjenester">
+  <div class="container">
+    <p class="section-kicker">Hva vi leverer</p>
+    <h2 class="statement">Vi tar et konkret problem, og leverer en løsning dere faktisk bruker.</h2>
+    <div class="cap-grid">
+      <a href="tjenester/" class="cap">
+        <h3>AI-løsninger</h3>
+        <p>AI rettet mot en bestemt arbeidsoppgave i bedriften, som utkast til tilbud, oppsummering av dokumenter eller sortering av henvendelser.</p>
+        <span class="cap-arrow" aria-hidden="true">&rarr;</span>
+      </a>
+      <a href="tjenester/" class="cap">
+        <h3>Integrasjoner mellom systemer</h3>
+        <p>Vi kobler sammen systemene dere allerede bruker, slik at data flyter automatisk i stedet for å tastes inn to steder.</p>
+        <span class="cap-arrow" aria-hidden="true">&rarr;</span>
+      </a>
+      <a href="tjenester/" class="cap">
+        <h3>Interne verktøy</h3>
+        <p>Enkle, skreddersydde verktøy for oppgaver som i dag løses i regneark, e-post eller på papir.</p>
+        <span class="cap-arrow" aria-hidden="true">&rarr;</span>
+      </a>
+      <a href="tjenester/" class="cap">
+        <h3>Kunnskap på én plattform</h3>
+        <p>Dokumentasjon, data og guider samlet på ett sted, for eksempel i SharePoint, så de ansatte finner det de trenger.</p>
+        <span class="cap-arrow" aria-hidden="true">&rarr;</span>
+      </a>
+      <a href="tjenester/" class="cap">
+        <h3>Nettsider</h3>
+        <p>Nye nettsider eller redesign, bygget for å gi henvendelser og enkle å holde oppdatert.</p>
+        <span class="cap-arrow" aria-hidden="true">&rarr;</span>
+      </a>
+      <a href="ai-workshop/" class="cap">
+        <h3>AI-workshop</h3>
+        <p>60 minutter der vi finner ut hvilke oppgaver hos dere som kan gjøres raskere med AI i dag.</p>
+        <span class="cap-arrow" aria-hidden="true">&rarr;</span>
+      </a>
     </div>
   </div>
 </section>
 
-<div class="cta-band">
-  <div class="cta-band-inner">
-    <h2>Har dere et prosjekt eller et konkret behov?</h2>
-    <a href="kontakt/" class="btn-outline">Ta kontakt</a>
+<!-- 4. AI-workshop -->
+<section class="feature-band" id="workshop">
+  <div class="feature-media" style="background-image:url('images/tile-slikvijobber.jpg')" aria-hidden="true"></div>
+  <div class="feature-text">
+    <p class="section-kicker">Gratis AI-workshop</p>
+    <h2 class="statement">Usikker på hvor AI passer inn hos dere? <span class="accent">Start med 60 minutter.</span></h2>
+    <ul class="check-list">
+      <li><strong>Vi kartlegger tidstyvene.</strong> Hvilke oppgaver, som tilbud, rapporter, e-post og analyse, kan løses raskere med AI i dag?</li>
+      <li><strong>Verktøy som virker samme dag.</strong> Bare enkle, velprøvde metoder de ansatte kan bruke samme ettermiddag.</li>
+      <li><strong>En oversikt dere beholder.</strong> Forbedringsmulighetene vi fant, tilpasset arbeidsflyten deres.</li>
+    </ul>
+    <p class="feature-note">Gratis for noen få bedrifter i Stavanger-regionen denne høsten.</p>
+    <a href="ai-workshop/" class="btn-solid">Les om workshopen</a>
   </div>
-</div>
+</section>
+
+<!-- 5. Hvorfor ETD -->
+<section class="block navy" id="hvorfor">
+  <div class="container">
+    <p class="section-kicker">Hvorfor ETD</p>
+    <h2 class="statement">Samme prosess som et etablert konsulenthus. En brøkdel av prisen.</h2>
+    <div class="feature-grid">
+      <div class="feature">
+        <span class="num">01</span>
+        <h3>Avgrensede leveranser</h3>
+        <p>Dere vet hva dere får, hva det koster og når det er ferdig, før arbeidet starter.</p>
+      </div>
+      <div class="feature">
+        <span class="num">02</span>
+        <h3>Pris som gjør prosjektet lønnsomt</h3>
+        <p>Vi ligger godt under vanlig konsulentpris. Det gjør at mindre prosjekter, som ellers aldri blir prioritert, faktisk lønner seg.</p>
+      </div>
+      <div class="feature">
+        <span class="num">03</span>
+        <h3>Teknisk bakgrunn</h3>
+        <p>ETD drives av Adrian Dietrichs, dataingeniør og masterstudent i industriell økonomi ved Universitetet i Stavanger.</p>
+      </div>
+    </div>
+    <p class="navy-links"><a href="slik-vi-jobber/">Slik vi jobber &rarr;</a> <a href="priser/">Priser &rarr;</a> <a href="om-oss/">Om oss &rarr;</a></p>
+  </div>
+</section>
+
+<!-- 6. Kontakt -->
+<section class="block" id="kontakt">
+  <div class="container contact-band">
+    <div>
+      <h2 class="statement statement-color">Har dere et konkret behov? La oss ta en prat.</h2>
+      <p class="split-lead">Fortell kort hva dere trenger, så svarer vi raskt. Er dere usikre på hvor dere skal starte, er workshopen et godt første steg.</p>
+    </div>
+    <div class="contact-actions">
+      <a href="kontakt/" class="btn-solid">Ta kontakt</a>
+      <a href="tel:+4793439278" class="direct-phone">934 39 278</a>
+      <span class="direct-name">Adrian Dietrichs</span>
+    </div>
+  </div>
+</section>
 
 <footer class="site-footer">
   <div class="footer-inner">
     <div class="footer-grid">
       <div>
         <a href="./" class="logo"><img src="images/logo-white.svg" alt="ETD" class="logo-img"></a>
-        <p>ETD Consulting og ETD Offshore. Fra Stavanger.</p>
+        <p>Engineering &amp; Technology Development. ETD Consulting og ETD Offshore, fra Stavanger.</p>
       </div>
       <div class="footer-col">
         <h4>Selskapet</h4>
         <a href="consulting/">ETD Consulting</a>
-<a href="offshore/">ETD Offshore</a>
-<a href="tjenester/">Tjenester</a>
-<a href="slik-vi-jobber/">Slik vi jobber</a>
-<a href="priser/">Priser</a>
-<a href="innsikt/">Innsikt</a>
-<a href="om-oss/">Om oss</a>
-<a href="bli-konsulent/">Bli konsulent</a>
-<a href="nyheter/">Nyheter</a>
+        <a href="offshore/">ETD Offshore</a>
+        <a href="tjenester/">Tjenester</a>
+        <a href="ai-workshop/">AI-workshop</a>
+        <a href="slik-vi-jobber/">Slik vi jobber</a>
+        <a href="priser/">Priser</a>
+        <a href="innsikt/">Innsikt</a>
+        <a href="om-oss/">Om oss</a>
       </div>
       <div class="footer-col">
         <h4>Kontakt</h4>
-        <a href="mailto:kontakt@ycpconsulting.no">kontakt@ycpconsulting.no</a>
+        <a href="tel:+4793439278">934 39 278</a>
+        <a href="kontakt/">Kontaktskjema</a>
       </div>
       <div class="footer-col">
-        <h4>Stavanger</h4>
-        <span>Engineering &amp; Technology Development</span>
+        <h4>Studenter</h4>
+        <a href="bli-konsulent/">Bli konsulent</a>
       </div>
     </div>
     <div class="footer-bottom">
-      <span>&copy; 2026 ETD</span>
+      <span>&copy; 2026 ETD &middot; Stavanger</span>
     </div>
   </div>
 </footer>
-<a href="kontakt/" class="chat-bubble">Snakk med oss &rarr;</a>
 <script src="app.js"></script>
 </body>
 </html>
