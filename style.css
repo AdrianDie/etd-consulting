@@ -1103,3 +1103,6 @@ section.block, .page-hero { padding-left: max(24px, calc((100% - 1112px) / 2)); 
   .prose h2, .article-prose h2 { margin: 52px 0 16px; }
   .prose .toc { margin-bottom: 48px; }
 }
+
+.navy-note { color: #d7dee6; max-width: 760px; margin: 48px 0 0; font-size: 16px; }
+.navy-note + .navy-links { margin-top: 20px; }
