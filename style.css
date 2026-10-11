@@ -901,7 +901,7 @@ nav.main-nav .btn-cta:hover { color: #fff !important; }
 }
 
 /* ---------- Forside: generell (bento + media + tjenester) ---------- */
-.bento-hero { background: var(--navy); color: #fff; padding: 140px 24px 96px; }
+.bento-hero { background: var(--navy); color: #fff; padding: 96px 24px 64px; }
 .bento-inner {
   max-width: 1112px;
   margin: 0 auto;
@@ -910,7 +910,7 @@ nav.main-nav .btn-cta:hover { color: #fff !important; }
   align-items: end;
   gap: 48px;
 }
-.bento-hero h1 { color: #fff; font-size: 64px; line-height: 1.05; letter-spacing: -0.015em; max-width: 880px; }
+.bento-hero h1 { color: #fff; font-size: 56px; line-height: 1.05; letter-spacing: -0.015em; max-width: 1000px; }
 .bento-hero .lead { color: #d7dee6; font-size: 19px; line-height: 1.55; max-width: 600px; margin: 32px 0 0; }
 .circle-btn {
   width: 72px; height: 72px; border-radius: 50%;
