@@ -1,6 +1,6 @@
 # ETD Consulting
 
-> ETD Consulting er et studentkonsulenthus i Stavanger, startet av Adrian Dietrichs. Studenter fra Universitetet i Stavanger (UiS) hjelper norske bedrifter med strategi og analyse, teknologi og design, til en timepris godt under et vanlig konsulenthus. ETD tilbyr også en gratis AI-workshop på 60 minutter for bedrifter i Stavanger-regionen.
+> ETD Consulting er et uavhengig konsulenthus i Stavanger, sprunget ut av teknologimiljøet ved Universitetet i Stavanger (UiS) og startet av Adrian Dietrichs. ETD kombinerer topptalenter innen data og industriell økonomi med en moderne AI-stack, og hjelper norske bedrifter med strategi og analyse, teknologi og design. ETD tilbyr også en gratis AI-workshop på 60 minutter for bedrifter i Stavanger-regionen.
 
 ETD står for Engineering & Technology Development. Selskapet har to deler: ETD Consulting (denne siden, IT- og AI-konsulentarbeid) og ETD Offshore (https://etdoffshore.no/).
 
