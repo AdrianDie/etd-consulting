@@ -1,0 +1,75 @@
+# ETD Consulting
+
+> ETD Consulting er et studentkonsulenthus i Stavanger, startet av Adrian Dietrichs. Studenter fra Universitetet i Stavanger (UiS) hjelper norske bedrifter med strategi og analyse, teknologi og design, til en timepris godt under et vanlig konsulenthus. ETD tilbyr også en gratis AI-workshop på 60 minutter for bedrifter i Stavanger-regionen.
+
+ETD står for Engineering & Technology Development. Selskapet har to deler: ETD Consulting (denne siden, IT- og AI-konsulentarbeid) og ETD Offshore (https://etdoffshore.no/).
+
+## Kontakt
+
+- Telefon: +47 934 39 278
+- E-post: kontakt@etdconsulting.no
+- Sted: Stavanger, Norge. Oppdrag for bedrifter i hele Norge, workshop hos kunden i Stavanger-regionen eller på Teams.
+- Kontaktperson: Adrian Dietrichs, grunnlegger
+- Kontaktskjema: https://etdconsulting.no/kontakt/
+
+## Tjenester
+
+ETD jobber innen tre fagområder:
+
+- **Strategi og analyse:** prosessoptimalisering, digital transformasjon, dataanalyse og innsikt, optimering, AI-strategi og kartlegging.
+- **Teknologi:** full-stack-, frontend- og backend-utvikling, skyplattformer, AI-applikasjoner, maskinlæring, webapplikasjoner, mobilapper, low-code og no-code.
+- **Design:** UX og UI, webdesign, merkevare, grafisk design, tjenestedesign, prototyper, innsiktsarbeid, brukertesting og universell utforming.
+
+Typiske leveranser:
+
+- Integrasjoner mellom systemer, så data flyter automatisk i stedet for å tastes inn to steder
+- AI-løsninger rettet mot en konkret arbeidsoppgave i bedriften
+- CRM og bestillingssystemer for henvendelser, tilbud, bestillinger og kunder
+- Kunnskap samlet på én plattform, for eksempel SharePoint
+- Nye nettsider eller redesign
+
+Samarbeidsformer: prosjektbasert (avgrenset prosjekt fra start til levering), rammeavtale (vedlikehold, videreutvikling, faglig sparring) eller teammedlem (en ETD-konsulent jobber i kundens team).
+
+## Gratis AI-workshop
+
+60 minutter hos bedriften eller på Teams. Gratis for tre bedrifter i Stavanger-regionen, fra 12. oktober 2026. Ingen forkunnskaper trengs.
+
+- Kartlegger hvilke konkrete oppgaver (tilbud, rapporter, e-post, analyse) som kan løses raskere med AI i dag
+- Enkle, velprøvde verktøy og metoder de ansatte kan bruke samme dag
+- Bedriften får en kort oppsummering av forbedringsmulighetene, tilpasset arbeidsflyten
+
+Mer informasjon og booking: https://etdconsulting.no/ai-workshop/
+
+## Slik jobber ETD
+
+Hvert prosjekt går gjennom fire steg: kartlegging, tilbud og plan (med estimat før arbeidet starter), bygging med jevnlige avstemminger, og kvalitetssikring og levering. Kunden har én fast kontaktperson gjennom hele prosjektet.
+
+## Om grunnleggeren
+
+Adrian Dietrichs er dataingeniør og masterstudent i industriell økonomi ved Universitetet i Stavanger. Han har jobbet som dataingeniør ved siden av studiene, blant annet for DNB og Proactima, og driver også Dietrichs Marketing, som lager nettsider og programvare for bedrifter.
+
+## For studenter
+
+ETD tar inn et fåtall studenter fra UiS som konsulenter på betalte kundeprosjekter, med tett faglig oppfølging. Opptak: søknad, portefølje, prøveoppgave og samtale. https://etdconsulting.no/bli-konsulent/
+
+## Sider
+
+- [Forside](https://etdconsulting.no/)
+- [Tjenester](https://etdconsulting.no/tjenester/)
+- [ETD Consulting: IT-konsulent for norske bedrifter](https://etdconsulting.no/consulting/)
+- [Gratis AI-workshop](https://etdconsulting.no/ai-workshop/)
+- [Slik vi jobber](https://etdconsulting.no/slik-vi-jobber/)
+- [Om oss](https://etdconsulting.no/om-oss/)
+- [Bli konsulent](https://etdconsulting.no/bli-konsulent/)
+- [Kontakt](https://etdconsulting.no/kontakt/)
+- [Nyheter](https://etdconsulting.no/nyheter/)
+- [Innsikt](https://etdconsulting.no/innsikt/)
+- [Artikkel: Fem oppgaver de fleste bedrifter kan gjøre raskere med AI i dag](https://etdconsulting.no/ai-i-bedriften/)
+- [AI-verktøykasse for ingeniører](https://etdconsulting.no/ai-tips-for-ingeniorer/)
+
+## English
+
+- [Home (English)](https://etdconsulting.no/en/)
+- [ETD Consulting (English)](https://etdconsulting.no/en/consulting/)
+- [Contact (English)](https://etdconsulting.no/en/contact/)
+- [AI toolkit for engineers](https://etdconsulting.no/ai-tips-for-engineers/)
