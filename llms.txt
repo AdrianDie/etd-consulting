@@ -50,11 +50,11 @@ Adrian Dietrichs er dataingeniør og masterstudent i industriell økonomi ved Un
 
 ## Teamet
 
-- Adrian Dietrichs, grunnlegger og daglig leder
-- Espen Dietrichs, utvikler
-- Bjarte Landråk, utvikler
-- Magnus Forsdahl, konsulent
-- Dirhad Moussa, konsulent
+- Adrian Dietrichs, daglig leder
+- Bjarte Landråk, partner/utvikler
+- Dirhad Moussa, partner/utvikler
+- Magnus Forsdahl, partner/utvikler
+- Espen Dietrichs, rådgiver
 
 ## For studenter
 
