@@ -48,6 +48,14 @@ Hvert prosjekt går gjennom fire steg: kartlegging, tilbud og plan (med estimat 
 
 Adrian Dietrichs er dataingeniør og masterstudent i industriell økonomi ved Universitetet i Stavanger. Han har jobbet som dataingeniør ved siden av studiene, blant annet for DNB og Proactima, og driver også Dietrichs Marketing, som lager nettsider og programvare for bedrifter.
 
+## Teamet
+
+- Adrian Dietrichs, grunnlegger og daglig leder
+- Espen Dietrichs, utvikler
+- Bjarte Landråk, utvikler
+- Magnus Forsdahl, konsulent
+- Dirhad Moussa, konsulent
+
 ## For studenter
 
 ETD tar inn et fåtall studenter fra UiS som konsulenter på betalte kundeprosjekter, med tett faglig oppfølging. Opptak: søknad, portefølje, prøveoppgave og samtale. https://etdconsulting.no/bli-konsulent/
