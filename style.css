@@ -1043,10 +1043,10 @@ section.block, .page-hero { padding-left: max(24px, calc((100% - 1112px) / 2)); 
 .review figcaption strong { display: block; font-weight: 500; color: var(--black); }
 .review figcaption span { color: #666; }
 .review-link { margin: 28px 0 0; }
-.about-portrait { width: 100%; max-width: 320px; height: auto; aspect-ratio: 1; object-fit: cover; margin-top: 40px; display: block; }
+.about-portrait { width: 100%; max-width: 320px; height: auto; aspect-ratio: 1; object-fit: cover; margin-top: 40px; display: block; border-radius: 50%; }
 
 .founder { display: grid; grid-template-columns: minmax(0, 4fr) minmax(0, 7fr); gap: 64px; align-items: start; }
-.founder-img { width: 100%; height: auto; aspect-ratio: 1; object-fit: cover; }
+.founder-img { width: 100%; height: auto; aspect-ratio: 1; object-fit: cover; border-radius: 50%; }
 .founder .statement { margin-bottom: 8px; }
 .founder-role { color: #666; margin: 0 0 24px; }
 .founder p { margin: 0 0 16px; }
